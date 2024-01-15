@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+<!--  <link rel="stylesheet" href="dist/css/style.bundle.css">-->
+<!--  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />-->
+</head>
+<body>
+
+<div class="sgs-collection-brands">
+    <div class="sgs-top-header">
+        <h2>Cataloage</h2>
+        <p>Ultimele cataloage de la furnizorii nostrii</p>
+    </div>
+    <div class="brands-wrapper"></div>
+</div>
+
+<script id="brands-catalogue" type="text/x-handlebars-template">
+    {{#each brands as |brand|}}
+    <article  class="brand-box">
+        <a href="#" class="sgs-brand" data-fancybox data-src="#catalog-lightbox-{{@index}}" data-caption="{{this.name}}">
+            <h2 class="sgs-brand-name">{{this.catalogs.length}} cataloage</h2>
+            {{ brandsLogoURL brand.img brandName=brand.name}}
+        </a>
+      <div id="catalog-lightbox-{{@index}}" class="catalog-lightbox" style="display: none;max-width: 800px">
+        <span class="sgs-brand-description" data-description="{{brand.description}}"></span>
+        <div class="brands-catalogs-{{@index}}">
+          {{#each brand.catalogs as |cat|}}
+            <article class="catalog-box">
+              <a class="sgs-catalog" href="{{> catalogsURL brand url=cat.url }}" target="_blank">
+                <h2 class="sgs-catalog-name">{{cat.name}}</h2>
+                {{ catalogIMG brand.name catName=cat.name url=cat.img }}
+              </a>
+            </article>
+          {{/each}}
+        </div>
+      </div>
+    </article>
+    {{/each}}
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" referrerpolicy="no-referrer"></script>-->
+<!--<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>-->
+<!--<script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>-->
+<script type="text/javascript" src="dist/js/load.chunks.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+
+@property --start {
+	syntax: '<number>';
+	inherits: true;
+	initial-value: 0;
+}
+
+.flex-glow {
+  position: relative;
+  max-width: 950px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  column-gap: var(--#{$prefix}glow-column-gap);
+  row-gap: var(--#{$prefix}glow-row-gap);
+  justify-content: center;
+  place-items: center;
+  z-index: 4;
+}
+
+.glows {
+	pointer-events: none;
+	position: absolute;
+	inset: 0;
+	filter: blur(calc(var(--#{$prefix}glow-blur) * 1px));
+
+  &::after, &::before {
+    position: absolute;
+    content: "";
+    background: var(--#{$prefix}glow-gradient);
+    background-attachment: fixed;
+    inset: -5px;
+    border: 10px solid transparent;
+    border-radius: var(--#{$prefix}glow-border-radius);
+    mask:
+      linear-gradient(#0000, #0000),
+      conic-gradient(
+          from calc(
+            (var(--start) - (var(--#{$prefix}glow-spread) * 0.5)) * 1deg),
+          #000 0deg, #fff, #0000 calc(var(--#{$prefix}glow-spread) * 1deg));
+    mask-composite: intersect;
+    mask-clip: padding-box, border-box;
+    opacity: var(--active);
+    transition: opacity 1s;
+    --alpha: 0;
+  }
+
+  .header {
+    position: relative;
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+
+  .badge {
+    border: 2px solid var(--border);
+    align-self: start;
+    border-radius: 100px;
+    padding: 0.5rem 0.7rem;
+    font-size: 0.675rem;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-weight: 50;
+  }
+
+}
+
+
+article {
+  --active: 0.15;
+  --start: 0;
+  position: relative;
+  height: 100%;
+  background: var(--#{$prefix}cards-color);
+  padding: 0;
+  aspect-ratio: 150 / 150;
+  border-radius: var(--#{$prefix}glow-border-radius);
+  min-width: 150px;
+  max-width: 150px;
+  z-index: 4;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: var(--#{$prefix}glow-border-width) solid transparent;
+    border-radius: var(--#{$prefix}glow-border-radius);
+    pointer-events: none;
+    background: var(--#{$prefix}glow-border);
+    background-attachment: fixed;
+    mask:
+      linear-gradient(#0000, #0000),
+      conic-gradient(
+        from calc(((var(--start) + (var(--#{$prefix}glow-spread) * 0.25)) - (var(--#{$prefix}glow-spread) * 1.5)) * 1deg),
+        hsl(0 0% 100% / 0.15) 0deg,
+        white,
+        hsl(0 0% 100% / 0.15) calc(var(--#{$prefix}glow-spread) * 2.5deg));
+    mask-clip: padding-box, border-box;
+    mask-composite: intersect;
+    opacity: var(--active);
+    transition: opacity 1s;
+  }
+
+  &::after {
+    --bg-size: 100%;
+    --alpha: 0;
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    background: var(--#{$prefix}glow-gradient);
+    background-attachment: fixed;
+    border-radius: var(--#{$prefix}glow-border-radius);
+    opacity: var(--active, 0);
+    transition: opacity 1s;
+    inset: 0;
+    border: var(--#{$prefix}glow-border-width) solid transparent;
+    mask:
+      linear-gradient(#0000, #0000),
+      conic-gradient(from calc(((var(--start) + (var(--#{$prefix}glow-spread) * 0.25)) - (var(--#{$prefix}glow-spread) * 0.5)) * 1deg), #0000 0deg, #fff, #0000 calc(var(--#{$prefix}glow-spread) * 0.5deg));
+    filter: brightness(1.5);
+    mask-clip: padding-box, border-box;
+    mask-composite: intersect;
+  }
+
+  &:is(:hover, :focus-visible) {
+    z-index: 4;
+  }
+}

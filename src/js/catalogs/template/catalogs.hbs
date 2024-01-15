@@ -1,0 +1,23 @@
+{{#each brands as |brand|}}
+<article class="brand-box">
+    <a href="#" class="sgs-brand" data-fancybox data-src="#catalog-lightbox-{{@index}}" data-caption="{{this.name}}">
+        <h2 class="sgs-brand-name">{{this.catalogs.length}} cataloage</h2>
+        {{ brandsLogoURL brand.img brandName=brand.name}}
+    </a>
+  <div id="catalog-lightbox-{{@index}}" class="catalog-lightbox" style="display: none;">
+    <span class="sgs-brand-description" data-description="{{brand.description}}"></span>
+    <div class="catalogs-wrapper-{{@index}} {{catalogColumns brand.catalogs}}">
+      {{#each brand.catalogs as |cat|}}
+        <article class="catalog-box">
+          <a class="sgs-catalog" href="{{> catalogsURL brand url=cat.url }}" target="_blank">
+            {{#if cat.name}}
+            <h2 class="sgs-catalog-name">{{cat.name}}</h2>
+            {{/if}}
+            {{ catalogIMG brand.name catName=cat.name url=cat.img }}
+          </a>
+        </article>
+        {{/each}}
+    </div>
+  </div>
+</article>
+{{/each}}

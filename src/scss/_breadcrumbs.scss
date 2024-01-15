@@ -1,0 +1,15 @@
+.breadcrumb {
+  font-size: 1.3rem;
+}
+
+.breadcrumbs-default ol li {
+  a {
+    font-weight: 500;
+    font-size: 1.3rem;
+  }
+  &.active {
+    font-size: 1.4rem;
+    color: var(--sgs-main-blue-500) !important;
+    font-weight: 600;
+  }
+}

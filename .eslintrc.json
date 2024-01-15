@@ -1,0 +1,30 @@
+{
+  "rules": {
+    "no-undef": "off",
+    "no-unused-vars": [1, { "varsIgnorePattern": "init*" }],
+    "no-tabs": ["error", {"allowIndentationTabs": true}],
+    "prettier/prettier": "error"
+  },
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "es2024": true,
+    "worker": true,
+    "amd": true,
+    "jquery": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2023,
+    "sourceType": "module"
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:prettier/recommended"
+  ],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "plugins": ["prettier"]
+}

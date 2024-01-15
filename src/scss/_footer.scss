@@ -1,0 +1,35 @@
+.-g-footer-affiliate-block {
+  padding-bottom: 0;
+}
+
+
+// Footer payment logos
+.main-footer {
+  .col {
+    .title {
+      margin-bottom: 5px;
+    }
+    &.-g-footer-company-data {
+      font-size: 1.3rem;
+    }
+    // Copyright footer section hide Gomag span
+    p.copyright {
+      font-size: 1.3rem;
+      > span {
+        display: none;
+      }
+    }
+  }
+
+  .payment-accepted {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 3vw);
+    grid-gap: 0 10px;
+  }
+}
+
+/* Footer affiliate block */
+.-g-footer-affiliate-block {
+  padding-top: 0;
+}

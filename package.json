@@ -1,0 +1,96 @@
+{
+  "name": "sgs-store-app",
+  "version": "1.0.0",
+  "description": "SGS SOLAR online store application",
+  "keywords": [],
+  "author": "Zaharia Constantin <constantin.zaharia@sgsolar.ro>",
+  "license": "LGPL-3.0-or-later",
+  "private": true,
+  "main": "src/js/sgs.main.js",
+  "scripts": {
+    "test": "mocha",
+    "watch": "set BROWSERSLIST_ENV=development && webpack --watch",
+    "build:dev": "set BROWSERSLIST_ENV=development && webpack --mode=development",
+    "build:prod": "set BROWSERSLIST_ENV=production && webpack --mode=production --node-env=production",
+    "serve": "webpack serve"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.6",
+    "@babel/preset-env": "^7.23.6",
+    "@stylistic/eslint-plugin-js": "^1.5.1",
+    "@types/node-sass": "^4.11.7",
+    "autoprefixer": "^10.4.16",
+    "babel-loader": "^9.1.3",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.8.1",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.0",
+    "file-loader": "^6.2.0",
+    "fs": "^0.0.1-security",
+    "glob-fs": "^0.1.7",
+    "html-loader": "^4.2.0",
+    "html-webpack-plugin": "^5.6.0",
+    "mini-css-extract-plugin": "^2.7.6",
+    "mocha": "^10.2.0",
+    "node-sass": "^9.0.0",
+    "postcss-loader": "^7.3.3",
+    "prettier": "^3.1.1",
+    "sass": "^1.69.7",
+    "sass-loader": "^13.3.2",
+    "style-loader": "^3.3.3",
+    "terser-webpack-plugin": "^5.3.9",
+    "thread-loader": "^4.0.2",
+    "uglify-js": "^3.17.4",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.89.0",
+    "webpack-bundle-analyzer": "^4.10.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-license-plugin": "^4.4.2",
+    "webpack-remove-empty-scripts": "^1.0.4",
+    "mime": "^4.0.1"
+  },
+  "dependencies": {
+    "@fancyapps/ui": "^5.0.32",
+    "autoprefixer": "^10.4.16",
+    "bxslider": "^4.2.14",
+    "css-minimizer-webpack-plugin": "^5.0.1",
+    "handlebars": "^4.7.8",
+    "jquery": "^3.7.1",
+    "jquery-ui": "1.13.2",
+    "json-loader": "^0.5.7",
+    "json5": "^2.2.3",
+    "lodash": "^4.17.21",
+    "mime-type": "^4.0.0",
+    "mime-types": "^2.1.35",
+    "moment": "^2.29.4",
+    "path": "^0.12.7",
+    "toml": "^3.0.0",
+    "workbox-webpack-plugin": "^7.0.0",
+    "yamljs": "^0.3.0"
+  },
+  "browserslist": {
+    "production": [
+      "> 1%",
+      "not dead"
+    ],
+    "development": [
+      "> 5%",
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 Opera version",
+      "last 1 Safari version",
+      "last 1 ios_saf version",
+      "not dead"
+    ],
+    "ssr": [
+      "node 12"
+    ]
+  },
+  "browser": {
+    "fs": false,
+    "path": false,
+    "os": false
+  }
+}

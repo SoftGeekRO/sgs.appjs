@@ -1,0 +1,18 @@
+.bottom-section {
+
+  .title {
+    font-weight: 500;
+    span {
+      font-weight: 500;
+    }
+  }
+  .holder {
+    background: var(--sgs-main-blue-100);
+    border-radius: 10px;
+  }
+  .col.social {
+    ul li a {
+      color: var(--sgs-main-orange-500);
+    }
+  }
+}

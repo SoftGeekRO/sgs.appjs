@@ -1,0 +1,42 @@
+// Configuration
+
+@import "maps";
+@import "functions";
+@import "variables";
+@import "mixins";
+@import "utilities";
+
+// Layout & components
+@import "root";
+@import "reboot";
+@import "global";
+// Brands catalog section START
+@import "hoverAnimation";
+// Brands catalog section STOP
+
+@import "helloBar";
+@import "categoryImage";
+@import "curentyToogle";
+@import "addToCartSticky";
+@import "searchBox";
+@import "mainMenu";
+@import "breadcrumbs";
+@import "filterBox";
+@import "owlCarousel";
+@import "bannerGroup";
+@import "trustIcons";
+@import "buttons";
+@import "productPage";
+@import "productTableSpecification";
+@import "contactPage";
+@import "bottomSection";
+@import "footer";
+@import "pv_system_types";
+
+// jQuery UI
+@import "~jquery-ui/dist/themes/base/jquery-ui.min.css";
+@import "~jquery-ui/dist/themes/start/jquery-ui.min.css";
+// FancyBox
+@import "~@fancyapps/ui/dist/fancybox/fancybox.css";
+// BxSlider
+@import "~bxslider/dist/jquery.bxslider.min.css";

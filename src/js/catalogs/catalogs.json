@@ -1,0 +1,277 @@
+{
+    "brands": [
+        {
+            "name": "Victron Energy",
+            "img": "victron_logo_200x200.png",
+            "description": "abc",
+            "catalogs": [
+                {
+                    "name": "",
+                    "img": "catalogs/victron-energy/2023/Brochure-Automotive_EN_web.png",
+                    "url": "catalogs/victron-energy/2023/Brochure-Automotive_EN_web.pdf"
+                },
+                {
+                    "name": "",
+                    "img": "catalogs/victron-energy/2023/Brochure-Energy-Storage-EN_web.png",
+                    "url": "catalogs/victron-energy/2023/Brochure-Energy-Storage-EN_web.pdf"
+                },
+                {
+                    "name": "",
+                    "img": "catalogs/victron-energy/2023/Brochure-Hybrid-gensets-SAL064141020-REV-00–2023–01_web.png",
+                    "url": "catalogs/victron-energy/2023/Brochure-Hybrid-gensets-SAL064141020-REV-00–2023–01_web.pdf"
+                },
+                {
+                    "name": "",
+                    "img": "catalogs/victron-energy/2023/Web_MARINE-Systems_2023_10.png",
+                    "url": "catalogs/victron-energy/2023/Web_MARINE-Systems_2023_10.pdf"
+                },
+                {
+                    "name": "",
+                    "img": "catalogs/victron-energy/2023/Victron-Energy-Marine-Systems-booklet-2022.png",
+                    "url": "catalogs/victron-energy/2023/Victron-Energy-Marine-Systems-booklet-2022.pdf"
+                },
+                {
+                    "name": "",
+                    "img": "catalogs/victron-energy/2023/Brochure-Mobility_EN_web.png",
+                    "url": "catalogs/victron-energy/2023/Brochure-Mobility_EN_web.pdf"
+                },
+                {
+                    "name": "",
+                    "img": "catalogs/victron-energy/2023/Booklet-Off-Grid-System-EN.png",
+                    "url": "catalogs/victron-energy/2023/Booklet-Off-Grid-System-EN.pdf"
+                },
+                {
+                    "name": "",
+                    "img": "catalogs/victron-energy/2023/Brochure-Off-Grid-backup-and-island-systems_EN_web.png",
+                    "url": "catalogs/victron-energy/2023/Brochure-Off-Grid-backup-and-island-systems_EN_web.pdf"
+                }
+            ]
+        },
+        {
+            "name": "Pylontech",
+            "img": "pylontech_logo_200x200.png",
+            "catalogs": [
+                {
+                    "name": "",
+                    "img": "catalogs/pylontech/2023/2023+Pylontech+brochure-PY230427EN-SD.png",
+                    "url": "catalogs/pylontech/2023/2023+Pylontech+brochure-PY230427EN-SD.pdf"
+                }
+            ]
+        },
+        {
+            "name": "Knipex",
+            "img": "knipex_logo_200x200.png",
+            "description": "KNIPEX s-a specializat pe dezvoltarea si fabricarea clestilor de inalta calitate si detine in acest domeniu o pozitie de varf ca producator in Europa. Patentii KNIPEX corespund celor mai inalte cerinte in ceea ce priveste performanta, ergonomia si durata de viata. Cu peste 1.000 de produse diferite, KNIPEX ofera un vast program pentru cele mai diferite intrebuintari in domeniul serviciilor si industriei.",
+            "catalogs": [
+                {
+                    "name": "New products 2023",
+                    "img": "catalogs/knipex/2023/KNIPEX_2023_EN_NewProductfolder_S.png",
+                    "url": "catalogs/knipex/2023/KNIPEX_2023_EN_NewProductfolder_S.pdf"
+                },
+                {
+                    "name": "Pliers",
+                    "img": "catalogs/knipex/2023/Blaetterkatalog_HK-2023_EN_20230713_XS.png",
+                    "url": "catalogs/knipex/2023/Blaetterkatalog_HK-2023_EN_20230713_XS.pdf"
+                }
+            ]
+        },
+        {
+            "name": "Wiha",
+            "img": "wiha_logo_200x200.png",
+            "catalogs": [
+                {
+                    "name": "",
+                    "img": "catalogs/wiha/2022/catalogue_2022_EN.png",
+                    "url": "catalogs/wiha/2022/catalogue_2022_EN.pdf"
+                },
+                {
+                    "name": "",
+                    "img": "catalogs/wiha/2022/catalogue_2022_vde_en.png",
+                    "url": "catalogs/wiha/2022/catalogue_2022_vde_en.pdf"
+                },
+                {
+                    "name": "",
+                    "img": "catalogs/wiha/2023/BackPack_Broschuere_Sell_Out_EN.png",
+                    "url": "catalogs/wiha/2023/BackPack_Broschuere_Sell_Out_EN.pdf"
+                },
+                {
+                    "name": "",
+                    "img": "catalogs/wiha/2023/Messgeraete_Sell_Out_EN.png",
+                    "url": "catalogs/wiha/2023/Messgeraete_Sell_Out_EN.pdf"
+                },
+                {
+                    "name": "",
+                    "img": "catalogs/wiha/2023/Topseller-Katalog_2023_EN.png",
+                    "url": "catalogs/wiha/2023/Topseller-Katalog_2023_EN.pdf"
+                }
+            ]
+        },
+        {
+            "name": "haupa",
+            "img": "haupa_logo_200x200.png",
+            "catalogs": [
+                {
+                    "name": "",
+                    "img": "catalogs/haupa/2022/EN_HAUPA_Produktaktion_10_2022_PV.png",
+                    "url": "catalogs/haupa/2022/EN_HAUPA_Produktaktion_10_2022_PV.pdf"
+                },
+                {
+                    "name": "",
+                    "img": "catalogs/haupa/2022/HAUPA_Katalog_2022_RO.png",
+                    "url": "catalogs/haupa/2022/HAUPA_Katalog_2022_RO.pdf"
+                },
+                {
+                    "name": "",
+                    "img": "catalogs/haupa/2023/EN_oP_BPL_2023.png",
+                    "url": "catalogs/haupa/2023/EN_oP_BPL_2023.pdf"
+                }
+            ]
+        },
+        {
+            "name": "OBO",
+            "img": "obo_logo_200x200.png",
+            "catalogs": [
+                {
+                    "name": "",
+                    "img": "catalogs/obo/2023/Gebaeudeinstallation_RO.png",
+                    "url": "catalogs/obo/2023/Gebaeudeinstallation_RO.pdf"
+                },
+                {
+                    "name": "",
+                    "img": "catalogs/obo/2023/Industrieinstallation_RO.png",
+                    "url": "catalogs/obo/2023/Industrieinstallation_RO.pdf"
+                },
+                {
+                    "name": "",
+                    "img": "catalogs/obo/2023/Schutzinstallation_RO.png",
+                    "url": "catalogs/obo/2023/Schutzinstallation_RO.pdf"
+                }
+            ]
+        },
+        {
+            "name": "BLACK+DECKER",
+            "img": "BD_logo_200x200.png",
+            "catalogs": [
+                {
+                    "name": "Power Tools 2018",
+                    "img": "catalogs/black_and_decker/2018/BD_Catalogue-Power-Tools-2018.jpg",
+                    "url": "catalogs/black_and_decker/2018/BD_Catalogue-Power-Tools-2018.pdf"
+                },
+                {
+                    "name": "Power Tools 2020",
+                    "img": "catalogs/black_and_decker/2020/BD_Catalogue-Power-Tools-2020.png",
+                    "url": "catalogs/black_and_decker/2020/BD_Catalogue-Power-Tools-2020.pdf"
+                }
+            ]
+        },
+        {
+            "name": "BMI",
+            "img": "BMI_logo_200x200.png",
+            "catalogs": [
+                {
+                    "name": "Instrumente de masura 2023",
+                    "img": "catalogs/BMI/2023/bmi-measuring-instruments-retail-catalog_2023.png",
+                    "url": "catalogs/BMI/2023/bmi-measuring-instruments-retail-catalog_2023.pdf"
+                }
+            ]
+        },
+        {
+            "name": "Bosch",
+            "img": "bosch_logo_200x200.png",
+            "catalogs": [
+                {
+                    "name": "CORDLESS TOOLS",
+                    "img": "catalogs/bosch/2019/Bosch_CORDLESS_TOOLS_2018-2019.png",
+                    "url": "catalogs/bosch/2019/Bosch_CORDLESS_TOOLS_2018-2019.pdf"
+                },
+                {
+                    "name": "DRILLING AND FASTENING",
+                    "img": "catalogs/bosch/2019/Bosch_DRILLING_and_FASTENING_2018-2019.png",
+                    "url": "catalogs/bosch/2019/Bosch_DRILLING_and_FASTENING_2018-2019.pdf"
+                },
+                {
+                    "name": "GRINDERS",
+                    "img": "catalogs/bosch/2019/Bosch_GRINDERS_2018-2019.png",
+                    "url": "catalogs/bosch/2019/Bosch_GRINDERS_2018-2019.pdf"
+                },
+                {
+                    "name": "MASONRY AND CONCRETE DRILLING",
+                    "img": "catalogs/bosch/2019/Bosch_MASONRY_AND_CONCRETE_DRILLING_2018-2019.png",
+                    "url": "catalogs/bosch/2019/Bosch_MASONRY_AND_CONCRETE_DRILLING_2018-2019.pdf"
+                },
+                {
+                    "name": "STORAGE SOLUTIONS",
+                    "img": "catalogs/bosch/2019/Bosch_STORAGE_SOLUTIONS_2018-2019.png",
+                    "url": "catalogs/bosch/2019/Bosch_STORAGE_SOLUTIONS_2018-2019.pdf"
+                },
+                {
+                    "name": "TAPS AND DIES",
+                    "img": "catalogs/bosch/2019/Bosch_TAPS_AND_DIES_2018-2019.png",
+                    "url": "catalogs/bosch/2019/Bosch_TAPS_AND_DIES_2018-2019.pdf"
+                }
+            ]
+        },
+        {
+            "name": "Testboy",
+            "img": "testboy_logo_200x200.png",
+            "catalogs": [
+                {
+                    "name": "",
+                    "img": "catalogs/testboy/2023/2023_Testboy_Katalog_kl_en.png",
+                    "url": "catalogs/testboy/2023/2023_Testboy_Katalog_kl_en.pdf"
+                }
+            ]
+        },
+        {
+            "name": "Wago",
+            "img": "wago_logo_200x200.png",
+            "catalogs": [
+                {
+                    "name": "",
+                    "img": "catalogs/wago/2023/WAGO-Automation-Technology-2023-2024.png",
+                    "url": "catalogs/wago/2023/WAGO-Automation-Technology-2023-2024.pdf"
+                },
+                {
+                    "name": "",
+                    "img": "catalogs/wago/2023/WAGO-Interface-Electronics-2023-2024.png",
+                    "url": "catalogs/wago/2023/WAGO-Interface-Electronics-2023-2024.pdf"
+                },
+                {
+                    "name": "",
+                    "img": "catalogs/wago/2023/WAGO-Marking-2023-2024.png",
+                    "url": "catalogs/wago/2023/WAGO-Marking-2023-2024.pdf"
+                },
+                {
+                    "name": "",
+                    "img": "catalogs/wago/2023/WAGO-PCB-Terminal-Blocks-and-Connectors-2023-2024.png",
+                    "url": "catalogs/wago/2023/WAGO-PCB-Terminal-Blocks-and-Connectors-2023-2024.pdf"
+                },
+                {
+                    "name": "",
+                    "img": "catalogs/wago/2023/WAGO-Pluggable-Connection-System-WINSTA-2023-2024.png",
+                    "url": "catalogs/wago/2023/WAGO-Pluggable-Connection-System-WINSTA-2023-2024.pdf"
+                },
+                {
+                    "name": "",
+                    "img": "catalogs/wago/2023/WAGO-Power-Supplies-2023-2024.png",
+                    "url": "catalogs/wago/2023/WAGO-Power-Supplies-2023-2024.pdf"
+                },
+                {
+                    "name": "",
+                    "img": "catalogs/wago/2023/WAGO-Rail-Mount-Terminal-Blocks-and-Connectors-2023-2024.png",
+                    "url": "catalogs/wago/2023/WAGO-Rail-Mount-Terminal-Blocks-and-Connectors-2023-2024.pdf"
+                },
+                {
+                    "name": "",
+                    "img": "catalogs/wago/2023/Supplementary-Catalog-2023-2-br-Electrical-Interconnection.png",
+                    "url": "catalogs/wago/2023/Supplementary-Catalog-2023-2-br-Electrical-Interconnection.pdf"
+                },
+                {
+                    "name": "",
+                    "img": "catalogs/wago/2023/Supplementary-Catalog-2023-2-br-WAGO-Automation-Technology-and-WAGO-Interface-Electronics.png",
+                    "url": "catalogs/wago/2023/Supplementary-Catalog-2023-2-br-WAGO-Automation-Technology-and-WAGO-Interface-Electronics.pdf"
+                }
+            ]
+        }
+    ]
+}
