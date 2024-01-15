@@ -1,10 +1,111 @@
 {
+  "root": true,
+  "extends": [
+    "standard",
+    "eslint:recommended",
+    "plugin:prettier/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings"
+  ],
   "rules": {
     "no-undef": "off",
     "no-unused-vars": [1, { "varsIgnorePattern": "init*" }],
     "no-tabs": ["error", {"allowIndentationTabs": true}],
-    "prettier/prettier": "error"
+    "prettier/prettier": "off",
+    "arrow-body-style": "off",
+    "capitalized-comments": "off",
+    "camelcase": "off",
+    "trailingComma": "off",
+    "one-var": "off",
+    "prefer-const": "off",
+    "comma-dangle": [
+      "off",
+      {
+        "objects": "never",
+        "arrays": "never",
+        "imports": "never",
+        "exports": "never",
+        "functions": "never"
+      }
+    ],
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+    ],
+    "import/first": "error",
+    "import/newline-after-import": "error",
+    "import/no-absolute-path": "error",
+    "import/no-amd": "error",
+    "import/no-cycle": [
+      "error",
+      {
+        "ignoreExternal": true
+      }
+    ],
+    "import/no-duplicates": "error",
+    "import/no-extraneous-dependencies": "error",
+    "import/no-mutable-exports": "off",
+    "import/no-named-as-default": "error",
+    "import/no-named-as-default-member": "error",
+    "import/no-named-default": "error",
+    "import/no-self-import": "error",
+    "import/no-unassigned-import": [
+      "off"
+    ],
+    "import/no-webpack-loader-syntax": "off",
+    "import/no-useless-path-segments": "error",
+    "import/order": "error",
+    "indent": [
+      "error",
+      "tab",
+      {
+        "MemberExpression": "off",
+        "SwitchCase": 1
+      }
+    ],
+    "max-params": [
+      "warn",
+      5
+    ],
+    "new-cap": [
+      "off",
+      {
+        "properties": false
+      }
+    ],
+    "no-console": "off",
+    "no-negated-condition": "off",
+    "object-curly-spacing": [
+      "error",
+      "always"
+    ],
+    "operator-linebreak": [
+      "error",
+      "after"
+    ],
+    "prefer-template": "error",
+    "semi": [
+      0,
+      "never"
+    ]
   },
+  "overrides": [
+    {
+      "env": {
+        "node": true
+      },
+      "files": [".eslintrc.{js,cjs}"],
+      "parserOptions": {
+        "sourceType": "script"
+      }
+    }
+  ],
   "env": {
     "browser": true,
     "commonjs": true,
@@ -12,19 +113,28 @@
     "es2024": true,
     "worker": true,
     "amd": true,
-    "jquery": true
+    "jquery": true,
+    "node": true
   },
   "parserOptions": {
-    "ecmaVersion": 2023,
+    "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "extends": [
-    "eslint:recommended",
-    "plugin:prettier/recommended"
-  ],
   "globals": {
+    "$": "readonly",
+    "require": true,
+    "process": true,
     "Atomics": "readonly",
-    "SharedArrayBuffer": "readonly"
+    "SharedArrayBuffer": "readonly",
+    "tsParticles": "readonly",
+    "loadFirePreset": "readonly",
+    "loadFireworksPreset": "readonly",
+    "loadPolygonPath": "readonly",
+    "dataLayer": "readonly"
   },
-  "plugins": ["prettier"]
+  "plugins": ["html", "prettier", "import", "n", "promise"],
+  "settings": {
+    "html/html-extensions": [".html", ".we"],
+    "html/report-bad-indent": "error"
+  }
 }

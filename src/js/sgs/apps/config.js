@@ -18,14 +18,14 @@ class AppConfig {
 	}
 
 	static create(entry) {
-		let app_config_class = null,
-			app_module = null;
+		let app_config_class = null;
+		let app_module = null;
 
 		try {
 			app_module = require(`../../${entry}/apps`);
-		} catch (err) {
-			console.error(err);
-			throw new InvalidImportError(err.message);
+		} catch (error) {
+			console.error(error);
+			throw new InvalidImportError(error.message);
 		}
 
 		if (!(app_module.default.prototype instanceof this)) {

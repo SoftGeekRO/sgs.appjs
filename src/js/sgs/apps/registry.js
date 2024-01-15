@@ -51,6 +51,6 @@ class Apps {
 	}
 }
 
-let apps = new Apps(null);
+const apps = new Apps(null);
 
 export default apps;

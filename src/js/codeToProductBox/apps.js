@@ -1,6 +1,6 @@
-import { AppConfig } from "../sgs/apps/config";
 import _ from "lodash";
 import $ from "jquery";
+import { AppConfig } from "../sgs/apps/config";
 
 let gomag = _.isUndefined($.Gomag) ? null : $.Gomag;
 class CodeToProductBox extends AppConfig {

@@ -2,6 +2,7 @@ import $ from "jquery";
 import Handlebars from "handlebars/dist/handlebars.min";
 import { Fancybox } from "@fancyapps/ui";
 
+import catalogs_hbs from "html-loader!./template/catalogs.hbs";
 import { settings } from "../sgs/config/settings";
 import { request_finished } from "../sgs/core/signals";
 import { AppConfig } from "../sgs/apps/config";
@@ -9,7 +10,6 @@ import { sort_json } from "../sgs/utils/json";
 import { slugify } from "../sgs/utils/text";
 
 import catalog_data from "./catalogs.json";
-import catalogs_hbs from "html-loader!./template/catalogs.hbs";
 
 const sorted = true;
 
@@ -22,11 +22,9 @@ class Catalogs extends AppConfig {
 		super("Catalogs");
 
 		let _functions = Object.getOwnPropertyNames(
-			Object.getPrototypeOf(this),
-		).filter(
-			(name) => name !== "constructor" && typeof this[name] === "function",
+			Object.getPrototypeOf(this)).filter(
+			(name) => name !== "constructor" && typeof this[name] === "function"
 		);
-
 		_functions.forEach((val, ndx) => {
 			if (val.startsWith("helper_") || val.startsWith("partial_")) {
 				this[val]();
@@ -39,6 +37,7 @@ class Catalogs extends AppConfig {
 	ready() {
 		this.render();
 	}
+
 	helper_brands_logo() {
 		Handlebars.registerHelper("brandsLogoURL", function (img_url, options) {
 			let brandName = options.hash.brandName;

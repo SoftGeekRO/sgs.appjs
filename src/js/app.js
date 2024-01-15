@@ -35,7 +35,6 @@
     })
 })(window, document);
 
-
 ----==== Trigger the script insert after the final GoMag script is executed ====----
 
 let sgs_bootstrap = new Event('sgs.app.load', {

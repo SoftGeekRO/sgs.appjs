@@ -1,13 +1,13 @@
+import $ from "jquery";
 import { BaseApp } from "../sgs/core/baseApp";
 
-import $ from "jquery";
 import "bxslider/dist/jquery.bxslider.min";
 import "jquery-ui/dist/jquery-ui.min";
 
 import { settings } from "../sgs/config/settings";
 import { load_signal } from "../sgs/core/signals";
-import companies_data from "./companiesList.json";
 import { AppConfig } from "../sgs/apps/config";
+import companies_data from "./companiesList.json";
 
 const BRANDS_URL =
 	"https://gomagcdn.ro/domains2/sgsolar.ro/files/brand/original/";
@@ -23,7 +23,7 @@ let defaults = {
 	slideMargin: 50,
 	moveSlides: 1,
 	easing: "cubic-bezier(0.165, 0.84, 0.44, 1)",
-	//shrinkItems: true,
+	// shrinkItems: true,
 	preloadImages: "all",
 	onSliderLoad: () => {
 		load_signal.trigger("SGS.bxslider", { elm: this });
@@ -45,9 +45,8 @@ load_signal.bind("SGS.bxslider", (evt, prop) => {
 });
 
 class BrandsCarusel extends AppConfig {
-	#wrapper = $("<div/>")
-		.addClass("sg-brands-slider container-h")
-		.css({ visibility: "hidden" });
+	#wrapper = $("<div/>").addClass("sg-brands-slider container-h").css({ visibility: "hidden" });
+
 	#carusel = $("<ul/>").addClass("bxslider");
 	constructor() {
 		super("BrandsCarusel");
