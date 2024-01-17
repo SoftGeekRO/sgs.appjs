@@ -14,6 +14,14 @@
     "build:prod": "set BROWSERSLIST_ENV=production && webpack --mode=production --node-env=production",
     "serve": "webpack serve"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soulraven/sgs.appjs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/soulraven/sgs.appjs/issues"
+  },
+  "homepage": "https://github.com/soulraven/sgs.appjs/issues#readme",
   "devDependencies": {
     "@babel/core": "^7.23.6",
     "@babel/preset-env": "^7.23.6",
