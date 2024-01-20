@@ -272,6 +272,32 @@
                     "url": "catalogs/wago/2023/Supplementary-Catalog-2023-2-br-WAGO-Automation-Technology-and-WAGO-Interface-Electronics.pdf"
                 }
             ]
-        }
+        },
+      {
+        "name": "TP Link",
+        "img": "tplink_logo_200x200.png",
+        "catalogs": [
+          {
+          "name": "",
+          "img": "catalogs/tplink/2023/2023_omada-sdn-solution-catalog.png",
+          "url": "catalogs/tplink/2023/2023_omada-sdn-solution-catalog.pdf"
+          },
+          {
+            "name": "",
+            "img": "catalogs/tplink/2022/2022_omada-sdn-solution-catalog.png",
+            "url": "catalogs/tplink/2022/2022_omada-sdn-solution-catalog.pdf"
+          },
+          {
+            "name": "",
+            "img": "catalogs/tplink/2022/2022_soho_catalog.png",
+            "url": "catalogs/tplink/2022/2022_soho_catalog.pdf"
+          },
+          {
+            "name": "",
+            "img": "catalogs/tplink/2022/2022_tapo_catalog.png",
+            "url": "catalogs/tplink/2022/2022_tapo_catalog.pdf"
+          }
+        ]
+      }
     ]
 }

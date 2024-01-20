@@ -76,8 +76,6 @@ const config = {
 	},
 	resolve: {
 		extensions: [".js", ".ts", ".tsx", ".css", ".jpg"],
-		// Fix webpack's default behavior to not load packages with jsnext:main module
-		// (jsnext:main directs not usually distributable es6 format, but es6 sources)
 		mainFields: ["module", "browser", "main"],
 		alias: {
 			app: path.resolve(__dirname, "src/sgs/"),
@@ -267,15 +265,7 @@ const config = {
 				type: "asset/resource",
 			},
 			{
-				test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/,
-				type: "asset/resource",
-			},
-			{
-				test: /\.eot(\?v=\d+\.\d+\.\d+)?$/,
-				type: "asset/resource",
-			},
-			{
-				test: /\.(woff|woff2|eot|ttf|otf)$/,
+				test: /\.(woff|woff2|eot|ttf|otf)(\?v=\d+\.\d+\.\d+)?$/,
 				type: "asset/resource",
 			},
 			{

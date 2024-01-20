@@ -65,7 +65,12 @@
     "webpack-cli": "^5.1.4",
     "webpack-license-plugin": "^4.4.2",
     "webpack-remove-empty-scripts": "^1.0.4",
-    "mime": "^4.0.1"
+    "mime": "^4.0.1",
+    "path": "^0.12.7",
+    "toml": "^3.0.0",
+    "json-loader": "^0.5.7",
+    "json5": "^2.2.3",
+    "yamljs": "^0.3.0"
   },
   "dependencies": {
     "@fancyapps/ui": "^5.0.32",
@@ -74,16 +79,11 @@
     "handlebars": "^4.7.8",
     "jquery": "^3.7.1",
     "jquery-ui": "1.13.2",
-    "json-loader": "^0.5.7",
-    "json5": "^2.2.3",
     "lodash": "^4.17.21",
     "mime-type": "^4.0.0",
     "mime-types": "^2.1.35",
     "moment": "^2.29.4",
-    "path": "^0.12.7",
-    "toml": "^3.0.0",
-    "workbox-webpack-plugin": "^7.0.0",
-    "yamljs": "^0.3.0"
+    "workbox-webpack-plugin": "^7.0.0"
   },
   "browserslist": {
     "production": [
