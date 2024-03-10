@@ -27,6 +27,7 @@ const settings = {
 		"datasheetTabMockup",
 		"stickyAddToCart",
 		"codeToProductBox",
+		"minimumOrder",
 		"pwa",
 		"tweaks",
 	],

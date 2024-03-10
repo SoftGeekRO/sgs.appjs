@@ -54,4 +54,4 @@ e2e/*.map
 .eslintcache
 package-lock.json
 .temp_cache
-
+secrets

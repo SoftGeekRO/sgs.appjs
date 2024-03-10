@@ -1,0 +1,27 @@
+
+#shoppingcart {
+  .cart-title-holder {
+    .minimumOrderBlock {
+      margin-bottom: 15px;
+      text-align: center;
+      &.minimumOrder_top_center {
+        .AddtoCart_messageBlock {
+          font-size: 1.25rem;
+          font-weight: 500;
+          color: var(--#{$prefix}main-orange-700);
+        }
+      }
+    }
+  }
+  .minimumOrderBlock {
+    margin-bottom: 15px;
+    text-align: right;
+    &.minimumOrder_bottom_right {
+      .AddtoCart_messageBlock {
+        font-size: 1.25rem;
+        font-weight: 500;
+        color: var(--#{$prefix}main-orange-700);
+      }
+    }
+  }
+}

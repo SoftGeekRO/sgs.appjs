@@ -184,3 +184,11 @@ span[class*='-g-product-final-price-wihout-vat-'] {
     background-color: var(--sgs-main-blue-600) !important;
   }
 }
+
+.__optionSelectorImage {
+  a {
+    img {
+      display: inline !important;
+    }
+  }
+}

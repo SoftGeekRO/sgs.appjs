@@ -1,5 +1,5 @@
 .main-menu ul > li > a {
-  color: var(--sgs-main-blue-500)  !important;
+  color: var(--#{$prefix}main-blue-500)  !important;
   font-weight: normal;
   font-style: normal;
   font-size: 13px !important;
@@ -11,7 +11,7 @@
 }
 
 .main-menu ul > li:hover > a, .menu-dd a:hover {
-  color: var(--sgs-main-blue-700) !important;
+  color: var(--#{$prefix}main-blue-700) !important;
 }
 
 .main-header .main-menu {
@@ -20,10 +20,10 @@
 
   &>li {
     & > a {
-      color: var(--sgs-main-blue-700) !important;
+      color: var(--#{$prefix}main-blue-700) !important;
     }
     &:hover > a {
-      color: var(--sgs-main-blue-700) !important;
+      color: var(--#{$prefix}main-blue-700) !important;
     }
   }
 
@@ -31,39 +31,42 @@
 
 .mobile-icon li {
   a {
-    color: var(--sgs-main-blue-500) !important;
+    color: var(--#{$prefix}main-blue-500) !important;
   }
   &:hover a {
-    color: var(--sgs-main-blue-700) !important;
+    color: var(--#{$prefix}main-blue-700) !important;
   }
 }
 
 #mm-main-menu .mm-navbar {
-  color: var(--sgs-main-blue-500) !important;
+  color: var(--#{$prefix}main-blue-500) !important;
 }
 
 #mm-nav-filter .mm-navbar {
-  color: var(--sgs-main-blue-500) !important;
+  color: var(--#{$prefix}main-blue-500) !important;
 }
 
 .menu-dd {
-
+  border-radius: 10px;
   &.open li a {
     font-size: 1.2rem !important;
     font-weight: 500;
+    padding-left: 5px;
   }
   li {
     a:hover {
-      color: var(--sgs-main-blue-700) !important;
+      background: var(--#{$prefix}main-blue-100) !important;
+      border-radius: 5px;
     }
 
     .title {
       margin-bottom: 5px;
       a {
-        color: var(--sgs-main-blue-500) !important;
-        font-weight: 600 !important;
+        color: var(--#{$prefix}main-blue-500) !important;
+        font-weight: 400 !important;
         font-size: 1.35rem !important;
         text-transform: uppercase !important;
+        padding-left: 5px;
       }
     }
   }
