@@ -37,36 +37,44 @@ const config = {
 			if (typeof groupName === "undefined") {
 				return `js/${filename}.js`;
 			}
-			return app_settings.isProduction
-				? `js/sgs.bundle.[fullhash].[id].js`
-				: `js/${groupName}/${filename}.js`;
+			return app_settings.isProduction ?
+				`js/sgs.bundle.[fullhash].[id].js` :
+				`js/${groupName}/${filename}.js`;
 		},
 		chunkFilename: (pathData) => {
-			return app_settings.isProduction
-				? `js/sgs.assets.[fullhash].[id].js`
-				: `js/sgs.assets.js`;
+			return app_settings.isProduction ?
+				`js/sgs.assets.[fullhash].[id].js` :
+				`js/sgs.assets.js`;
 		},
 		assetModuleFilename: (pathData) => {
-			const filepath = path
-				.dirname(pathData.filename)
-				.split("/")
-				.slice(1)
-				.join("/");
+			let filepath = pathData.filename,
+				mimeClass = 'other',
+				fileExt = path.extname(pathData.filename).toLowerCase();
+			const removeParts = ['node_modules', 'src'],
+				mapFilesToFolders = {
+					img: ['.png', '.svg', '.jpeg', '.jpg', '.gif'],
+					fonts: ['.woff2', '.woff', '.ttf']
 
-			let mime_path = app_settings.assetsFilename(
-					Mime.getType(pathData.filename),
-				),
-				resourceName =
-					pathData.module.resourceResolveData.descriptionFileData.name,
-				innerRequest = pathData.module.resourceResolveData.__innerRequest;
+				};
+			Object.keys(mapFilesToFolders).forEach(key => {
+				const mimeList = mapFilesToFolders[key];
+				if (mimeList.find(ext => fileExt.includes(ext))) {
+					mimeClass = key;
+				}
+			});
 
-			return app_settings.isProduction
-				? `${mime_path}/${filepath}/[name][ext]`
-				: `${mime_path}/${filepath}/[name][ext]`;
+			let partsPathData = pathData.filename.split('/');
+			if (removeParts.includes(partsPathData[0])) {
+				filepath = partsPathData.slice(1).join('/');
+			}
+
+			return app_settings.isProduction ?
+				`${mimeClass}/${filepath}` :
+				`${mimeClass}/${filepath}`;
 		},
 		path: path.join(__dirname, "dist"),
 		publicPath: app_settings.publicPath,
-		//publicPath: "auto",
+		// publicPath: "auto",
 		clean: true,
 		globalObject: "this",
 		library: {
@@ -94,7 +102,7 @@ const config = {
 		allowCollectingMemory: true,
 	},
 	plugins: [
-		//new webpack.ContextReplacementPlugin(),
+		// new webpack.ContextReplacementPlugin(),
 		new webpack.BannerPlugin({
 			banner: app_settings.banner,
 			raw: false,
@@ -211,7 +219,7 @@ const config = {
 				},
 			],
 		}),
-		//new WorkboxPlugin.GenerateSW({ clientsClaim: true, skipWaiting: true }),
+		// new WorkboxPlugin.GenerateSW({ clientsClaim: true, skipWaiting: true }),
 	],
 	module: {
 		rules: [
@@ -259,10 +267,6 @@ const config = {
 						},
 					},
 				],
-			},
-			{
-				test: /\.(woff|woff2)(\?v=\d+\.\d+\.\d+)?$/,
-				type: "asset/resource",
 			},
 			{
 				test: /\.(woff|woff2|eot|ttf|otf)(\?v=\d+\.\d+\.\d+)?$/,
@@ -375,6 +379,7 @@ const config = {
 	},
 	stats: {
 		colors: true,
+		errorDetails: true
 	},
 };
 
@@ -382,10 +387,10 @@ module.exports = async () => {
 	if (app_settings.isProduction) {
 		config.mode = "production";
 		config.devtool = "source-map";
-		//config.plugins.push(new WorkboxWebpackPlugin.GenerateSW());
+		// config.plugins.push(new WorkboxWebpackPlugin.GenerateSW());
 	} else {
 		config.mode = "development";
-		//config.devtool = "eval";
+		// config.devtool = "eval";
 		config.devtool = "cheap-module-source-map";
 
 		config.plugins.push(

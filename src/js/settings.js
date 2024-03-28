@@ -30,6 +30,7 @@ const settings = {
 		"minimumOrder",
 		"pwa",
 		"tweaks",
+		"socialMediaIcons"
 	],
 };
 

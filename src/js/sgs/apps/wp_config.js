@@ -1,25 +1,9 @@
-const pkg = require("../../../../package.json");
 const path = require("path");
-
-const map_mime_to_folders = {
-	image: "img",
-	font: "font",
-	text: "text",
-	video: "video",
-	pdf: "docs",
-};
-
-const assetsFilename = (filename) => {
-	for (const mime in map_mime_to_folders) {
-		if (filename.includes(mime)) {
-			return map_mime_to_folders[mime];
-		}
-	}
-};
+const pkg = require("../../../../package.json");
 
 // constants
 const publicPath = "https://cdn.sgsolar.ro/sgs.app/",
-	//dotenv = require("dotenv").config({ path: __dirname + "/.env" }),
+	// dotenv = require("dotenv").config({ path: __dirname + "/.env" }),
 	base_path = path.resolve(__dirname, "../../../../"),
 	sourcePath = path.join(base_path, "src"),
 	outPath = path.join(base_path, "dist");
@@ -93,7 +77,6 @@ const externals = {
 
 module.exports = {
 	isProduction,
-	assetsFilename,
 	publicPath,
 	base_path,
 	sourcePath,
